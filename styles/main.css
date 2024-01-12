@@ -1,0 +1,36 @@
+body {
+    background-color: #273347;
+    font-family: 'IBM Plex Mono', sans-serif;
+    color: white;
+    line-height: 2;
+    font-size: 20px;
+}
+
+h1 {
+
+    color: #fc636b;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #ffd200;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #3be8b0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+h6 {}
+
+pre {
+    background-color: #354560;
+    padding: 10px;
+}
