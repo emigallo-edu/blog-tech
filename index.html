@@ -15,12 +15,11 @@
 
 <body>
     <div class="container">
-        <a href="/posts/classes-types-relations/content.html">Post 1</a>
     </div>
 
     <script>
         const converter = new showdown.Converter();
-        const md = fetch("/posts/post1/content.md")
+        fetch("/posts/classes-types-relations/content.md")
             .then(response => response.text())
             .then(text => {
                 const html = converter.makeHtml(text);
