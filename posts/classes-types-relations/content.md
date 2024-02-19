@@ -1,5 +1,13 @@
-# Relación por colaboración entre clases
+# Relaciones entre clases
+Las clases, al igual que los objetos, no existen de modo aislado. La Orientación a Objetos (POO) intenta modelar aplicaciones del mundo real y por lo tanto debe reflejar estas relaciones.
 Si dos objetos colaboran, a través del paso de mensajes, sus respectivas clases están relacionadas.
+
+>Existen tres tipos básicos de relaciones entre clases:
+>- La primera es la generalizacion/especializacion, que denota una relacion 'es un'. Por ej, una rosa 'es una' flor, lo que quiere decir que una rosa es una subclase especializada de una clase mas general, la de las flores.
+>- La segunda es la relacion 'composición/agregación' (también conocida como 'todo/parte'), que denota una relacicón 'parte de'. Asi, un petalo no es un tipo de flor; es parte de una flor.
+>- La tercera es la asociación, que denota alguna dependecia semántica entre clases de otros modos indpedientes, como entre las abejas y las flores.>
+
+Grady Booch [Booch, 94]
 
 ## Relación de Composición/Agregación
 
@@ -63,7 +71,7 @@ Clases persona y familia: un persona puede pertenecer a la familia en que nació
 ![](/posts/post1/agregacion.svg)
 
 
-## Relación de Asociación
+### Asociación
 Es la relación que perdura entre un cliente y un servidor determinado.
 
 Existe una relación de asociación entre la clase A, el cliente, y la clase B, el servidor, si un objeto de la clase A disfruta de los servicios de un objeto determinado de la clase B (mensajes lanzados) para llevar a cabo la responsabilidad del objeto de la clase A en diversos momentos creándose una dependencia del objeto servidor.
@@ -85,7 +93,7 @@ Existe una relación de asociación entre la clase A, el cliente, y la clase B, 
 
 ![](/posts/post1/asociacion.svg)
 
-## Relación de Dependencia/Uso
+### Dependencia/Uso
 Es la relación que se establece momentáneamente entre un cliente y cualquier servidor.
 
 Existe una relación de uso entre la clase A, el cliente, y la clase B, el servidor, si un objeto de la clase A disfruta de los servicios de un objeto de la clase B (mensajes lanzados) para llevar a cabo la responsabilidad del objeto de la clase A en un momento dado sin dependencias futuras.
@@ -104,16 +112,16 @@ Existe una relación de uso entre la clase A, el cliente, y la clase B, el servi
 ## Comparativa de Relaciones entre Clases por Colaboración
 ![](/posts/post1/comparativaRelaciones.jpg)
 
-## Relaciones por transmisión entre clases
+## Herencia
 Si una clase transmite a otra todos sus miembros, atributos y métodos, para organizar una jerarquía de clasificación.
 
-## Relación de Herencia por Extensión
+## Herencia por Extensión
 La clase descendiente implementa todas las operaciones de la clase base, añadiendo o redefiniendo partes especializadas
 
 ![](/posts/post1/herenciaEspecializacion.svg)
 
 
-## Relación de Herencia por Implementación
+## Herencia por Implementación
 La especialización transforma el concepto de la clase base a la clase derivada
 
 ![](/posts/post1/herenciaExtensión.svg)
