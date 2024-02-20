@@ -19,7 +19,7 @@
 
     <script>
         const converter = new showdown.Converter();
-        fetch("/docs/classes-types-relations/content.md")
+        fetch("./docs/classes-types-relations/content.md")
             .then(response => response.text())
             .then(text => {
                 const html = converter.makeHtml(text);
