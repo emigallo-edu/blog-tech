@@ -38,7 +38,7 @@ Clases persona y cabeza: una cabeza solo puede pertenecer a una persona y no pue
     class Parte {
     }
 
-![](/posts/post1/composicion.svg)
+![](/docs/classes-types-relations/composicion.svg)
 
 ### Agregación
 - Es una composición donde la vida del objetos de la clase contenida no debe coincidir con la vida de la clase contenedor.
@@ -68,7 +68,7 @@ Clases persona y familia: un persona puede pertenecer a la familia en que nació
     class Agregado {
     }
 
-![](/posts/post1/agregacion.svg)
+![](/docs/classes-types-relations/agregacion.svg)
 
 
 ### Asociación
@@ -91,7 +91,7 @@ Existe una relación de asociación entre la clase A, el cliente, y la clase B, 
     class Asociado {
     }
 
-![](/posts/post1/asociacion.svg)
+![](/docs/classes-types-relations/asociacion.svg)
 
 ### Dependencia/Uso
 Es la relación que se establece momentáneamente entre un cliente y cualquier servidor.
@@ -107,10 +107,10 @@ Existe una relación de uso entre la clase A, el cliente, y la clase B, el servi
     class Usado {
     }
 
-![](/posts/post1/uso.svg)
+![](/docs/classes-types-relations/uso.svg)
 
 ## Comparativa de Relaciones entre Clases por Colaboración
-![](/posts/post1/comparativaRelaciones.jpg)
+![](/docs/classes-types-relations/comparativaRelaciones.jpg)
 
 ## Herencia
 Si una clase transmite a otra todos sus miembros, atributos y métodos, para organizar una jerarquía de clasificación.
@@ -118,10 +118,10 @@ Si una clase transmite a otra todos sus miembros, atributos y métodos, para org
 ## Herencia por Extensión
 La clase descendiente implementa todas las operaciones de la clase base, añadiendo o redefiniendo partes especializadas
 
-![](/posts/post1/herenciaEspecializacion.svg)
+![](/docs/classes-types-relations/herenciaEspecializacion.svg)
 
 
 ## Herencia por Implementación
 La especialización transforma el concepto de la clase base a la clase derivada
 
-![](/posts/post1/herenciaExtensión.svg)
+![](/docs/classes-types-relations/herenciaExtensión.svg)
