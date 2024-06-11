@@ -8,6 +8,13 @@ Ellos son:
 - [Experto en la información](#experto-informacion)
 - [Creador](#creador)
 - [Patrón controlador](#patron-controlador)
+- [Alta cohesión](#patron-controlador)
+- [Bajo acoplamiento](#patron-controlador)
+- [Polimorfismo](#Polimorfismo)
+- [Fabricación pura](#patron-controlador)
+- [Indirección](#patron-controlador)
+- [Variaciones Protegidas](#patron-controlador)
+
 
 ### Experto en la información {#experto-informacion}
 
