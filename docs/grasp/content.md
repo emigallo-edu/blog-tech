@@ -5,18 +5,18 @@ Son una serie de principio generales de software para asignación de responsabil
 La creación de sistemas de software mantenibles, escalables y reutilizables es la base del desarrollo de software. Para lograr estos objetivos, es esencial comprender y aplicar el conjunto correcto de principios de diseño.
 
 Ellos son:
-- [Experto en la información](#experto-informacion)
-- [Creador](#creador)
-- [Patrón controlador](#patron-controlador)
-- [Alta cohesión](#patron-controlador)
-- [Bajo acoplamiento](#patron-controlador)
+- [Experto en la información](#Experto en la información)
+- [Creador](#Creador)
+- [Patrón controlador](#Patrón controlador)
+- [Alta cohesión](#Alta cohesión)
+- [Bajo acoplamiento](#Bajo acoplamiento)
 - [Polimorfismo](#Polimorfismo)
-- [Fabricación pura](#patron-controlador)
-- [Indirección](#patron-controlador)
-- [Variaciones Protegidas](#patron-controlador)
+- [Fabricación pura](#Fabricación pura)
+- [Indirección](#Indirección)
+- [Variaciones Protegidas](#Variaciones Protegidas)
 
 
-### Experto en la información {#experto-informacion}
+### Experto en la información
 
 Dado un objeto, ¿cuáles responsabilidades pueden ser asignado y cuáles no?
 El principio experto en la información dice asignar la responsabilidad a la clase que tiene la información necesaria para cumplir con la responsabilidad.
@@ -34,7 +34,7 @@ En el siguiente ejemplo, el empleado es el indicado para calcular su propio sala
         }
     }
 
-### Creador {#creador}
+### Creador
 
 La creación de objetos es una de las actividades más comunes en un sistema orientado a objetos. Consecuentenemente, es útil tener un principio general para asignar la responsabilidad de creación.
 
@@ -78,7 +78,7 @@ En el siguiente ejemplo, la factura es la encargada de crear los objetos de los 
 
 Esto está muy ligado a la relación entre clases. En [este post](../classes-types-relations/content.md) podes encontrar mas info.
 
-### Patrón controlador {#patron-controlador}
+### Patrón controlador
 
 El Patrón controlador sirve como intermediario entre una interfaz y el lógica que la implementa. Asigna la responsabilidad de manejar los eventos del sistema en una clase dedicada, que gestiona y coordina el comportamiento del sistema.
 
