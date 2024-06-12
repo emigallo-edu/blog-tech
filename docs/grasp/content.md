@@ -7,13 +7,13 @@ La creación de sistemas de software mantenibles, escalables y reutilizables es 
 Ellos son:
 - [Experto en la información](#experto-en-la-información)
 - [Creador](#creador)
-- [Patrón controlador](#Patrón controlador)
-- [Alta cohesión](#Alta cohesión)
-- [Bajo acoplamiento](#Bajo acoplamiento)
+- [Patrón controlador](#patrón-controlador)
+- [Alta cohesión](#alta-cohesión)
+- [Bajo acoplamiento](#bajo-acoplamiento)
 - [Polimorfismo](#polimorfismo)
-- [Fabricación pura](#Fabricación pura)
+- [Fabricación pura](#fabricación-pura)
 - [Indirección](#indirección)
-- [Variaciones Protegidas](#Variaciones Protegidas)
+- [Variaciones Protegidas](#variaciones-protegidas)
 
 
 ### Experto en la información
