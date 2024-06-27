@@ -126,7 +126,9 @@ Es un tipo de medición ordinal y se describe generalmente como "cohesión alta"
 En el siguiente ejemplo, vemos como el evento button_click asociado a un botón de la interfaz gráfica de usuario, realiza 2 tareas. La 1era es gestionar el evento en sí, y la 2da es realizar el login en el sistema
 
     public void button_click(User user) {
-
+            UserService userService = new UserService();
+            UserController userController = new UserController(userService);
+            userController.register("user1", "password1");
     }
 
 
