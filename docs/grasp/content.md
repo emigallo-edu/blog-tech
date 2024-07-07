@@ -15,6 +15,17 @@ Ellos son:
 - [Indirección](#Indirección)
 - [Variaciones Protegidas](#Variaciones Protegidas)
 
+- [Experto en la información](#experto-en-la-información)
+- [Creador](#creador)
+- [Patrón controlador](#patrón-controlador)
+- [Alta cohesión](#alta-cohesión)
+- [Bajo acoplamiento](#bajo-acoplamiento)
+- [Polimorfismo](#polimorfismo)
+- [Fabricación pura](#fabricación-pura)
+- [Indirección](#indirección)
+- [Variaciones Protegidas](#variaciones-protegidas)
+>>>>>>> 7025fd079573fa02e7f97b4a97617cf685bfa6fa
+
 
 ### Experto en la información
 
@@ -126,7 +137,9 @@ Es un tipo de medición ordinal y se describe generalmente como "cohesión alta"
 En el siguiente ejemplo, vemos como el evento button_click asociado a un botón de la interfaz gráfica de usuario, realiza 2 tareas. La 1era es gestionar el evento en sí, y la 2da es realizar el login en el sistema
 
     public void button_click(User user) {
-
+            UserService userService = new UserService();
+            UserController userController = new UserController(userService);
+            userController.register("user1", "password1");
     }
 
 
