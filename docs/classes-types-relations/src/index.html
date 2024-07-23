@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="code.ts"></script>
+    <!-- <script src="main.js"></script> -->
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.13/system.js">
+  </script>
 </head>
 
 <body>
-
+    <script type="text/javascript">
+        // index.js is the transpiled index.ts
+        SystemJS.import('main.js');
+      </script>
 </body>
 
 </html>

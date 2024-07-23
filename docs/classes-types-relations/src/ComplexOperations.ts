@@ -4,7 +4,7 @@ import { Division } from "./operations/Division";
 import { AnyNumberNotNeutral } from "./values/AnyNumberNotNeutral";
 
 export class ComplexOperations {
-    calcularAreaTrianguloRectangula(base: PositiveNumber, altura: PositiveNumber) {
+    calcularAreaTrianguloRectangulo(base: PositiveNumber, altura: PositiveNumber) {
         let area: number = this.calcularAreaRectangulo(base, altura);
         new Division(new AnyNumberNotNeutral(area), new AnyNumberNotNeutral(2));
     }
@@ -14,7 +14,7 @@ export class ComplexOperations {
             .calculate();
     }
 
-    calcularAreTriangulo(){
+    calcularAreaTriangulo() {
         // Ver como calcular un triangulo no rectangulo
         // Hacer una version con 
     }

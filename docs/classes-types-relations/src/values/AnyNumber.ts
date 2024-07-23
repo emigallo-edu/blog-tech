@@ -1,11 +1,11 @@
 export class AnyNumber {
-    #value: number;
+    private val: number;
 
     constructor(value: number) {
-        this.#value = value;
+        this.val = value;
     }
 
     getValue() {
-        return this.#value;
+        return this.val;
     }
 }

@@ -3,13 +3,13 @@ import { Add } from "./Add";
 import { Operation } from "./Operation";
 
 export class AddOnePlusFive implements Operation {
-    #add: Add;
+    private add: Add;
     constructor() {
-        this.#add = new Add(new AnyNumber(1), new AnyNumber(5));
+        this.add = new Add(new AnyNumber(1), new AnyNumber(5));
     }
 
     calculate(): Number {
-        return this.#add.calculate();
+        return this.add.calculate();
     }
 
     getName(): string {
