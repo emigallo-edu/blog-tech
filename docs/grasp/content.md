@@ -5,23 +5,14 @@ Son una serie de principio generales de software para asignación de responsabil
 La creación de sistemas de software mantenibles, escalables y reutilizables es la base del desarrollo de software. Para lograr estos objetivos, es esencial comprender y aplicar el conjunto correcto de principios de diseño.
 
 Ellos son:
-- [Experto en la informacion](#experto-en-la-información)
+- [Experto en la informacion](#experto-en-la-informacion)
 - [Creador](#creador)
-- [Patrón controlador](#patrón-controlador)
-- [Alta cohesión](#alta-cohesión)
+- [Patrón controlador](#patron-controlador)
+- [Alta cohesión](#alta-cohesion)
 - [Bajo acoplamiento](#bajo-acoplamiento)
 - [Polimorfismo](#polimorfismo)
-- [Fabricación pura](#fabricación-pura)
-- [Indirección](#indirección)
-- [Variaciones Protegidas](#variaciones-protegidas)
-- [Experto en la información](#experto-en-la-información)
-- [Creador](#creador)
-- [Patrón controlador](#patrón-controlador)
-- [Alta cohesión](#alta-cohesión)
-- [Bajo acoplamiento](#bajo-acoplamiento)
-- [Polimorfismo](#polimorfismo)
-- [Fabricación pura](#fabricación-pura)
-- [Indirección](#indirección)
+- [Fabricación pura](#fabricacion-pura)
+- [Indirección](#indireccion)
 - [Variaciones Protegidas](#variaciones-protegidas)
 
 ### Experto en la información
