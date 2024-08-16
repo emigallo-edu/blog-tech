@@ -23,7 +23,7 @@
         const openingTag1 = '">';
         const closingTag = '</h3>';
         const converter = new showdown.Converter();
-        fetch("docs/grasp/content.md")
+        fetch(`docs/${getSection()}/content.md`)
             .then(response => response.text())
             .then(text => {
                 let html = converter.makeHtml(text);
@@ -33,7 +33,7 @@
                     let openingTagIndex = find(i, openingTag, html);
                     let openingTag1Index = find(openingTagIndex, openingTag1, html);
                     let closingTagIndex = find(openingTagIndex, closingTag, html) + closingTag.length;
-                   
+
                     let idToChange = html.substring(openingTagIndex + openingTag.length, openingTag1Index);
                     let newId = formatForId(html.substring(openingTag1Index + openingTag1.length, closingTagIndex - closingTag.length));
                     html = html.replace(idToChange, newId);
@@ -68,6 +68,10 @@
                 .toLowerCase();
         }
 
+        function getSection() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.has('section') ? urlParams.get('section') : 'classes-types-relations';
+        }
     </script>
 </body>
 
