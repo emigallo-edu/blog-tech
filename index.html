@@ -19,13 +19,54 @@
     </div>
 
     <script>
+        const openingTag = '<h3 id="';
+        const openingTag1 = '">';
+        const closingTag = '</h3>';
         const converter = new showdown.Converter();
         fetch("docs/grasp/content.md")
             .then(response => response.text())
             .then(text => {
-                const html = converter.makeHtml(text);
+                let html = converter.makeHtml(text);
+                let i = 0;
+                let endOfFile = true;
+                do {
+                    let openingTagIndex = find(i, openingTag, html);
+                    let openingTag1Index = find(openingTagIndex, openingTag1, html);
+                    let closingTagIndex = find(openingTagIndex, closingTag, html) + closingTag.length;
+                   
+                    let idToChange = html.substring(openingTagIndex + openingTag.length, openingTag1Index);
+                    let newId = formatForId(html.substring(openingTag1Index + openingTag1.length, closingTagIndex - closingTag.length));
+                    html = html.replace(idToChange, newId);
+
+                    i = openingTagIndex + 1;
+                    endOfFile = find(i, openingTag, html) == -1;
+                } while (!endOfFile);
+
                 document.querySelector(".container").innerHTML = html;
             });
+
+        function find(start, pattern, text) {
+            let index = -1;
+            let i = start;
+            while (index == -1 && i < text.length) {
+                let portion = text.substring(i, i + pattern.length);
+                if (portion == pattern) {
+                    index = i;
+                }
+                i++;
+            }
+            return index;
+        }
+
+        function formatForId(text) {
+            return text.replaceAll(' ', '-')
+                .replaceAll('á', 'a')
+                .replaceAll('é', 'e')
+                .replaceAll('í', 'i')
+                .replaceAll('ó', 'o')
+                .replaceAll('ú', 'u')
+                .toLowerCase();
+        }
 
     </script>
 </body>
