@@ -15,7 +15,7 @@ Ellos son:
 - [Indirección](#indireccion)
 - [Variaciones Protegidas](#variaciones-protegidas)
 
-### Experto en la información
+### Experto en la informacion
 
 Dado un objeto, ¿cuáles responsabilidades pueden ser asignado y cuáles no?
 El principio experto en la información dice asignar la responsabilidad a la clase que tiene la información necesaria para cumplir con la responsabilidad.
@@ -77,7 +77,7 @@ En el siguiente ejemplo, la factura es la encargada de crear los objetos de los 
 
 Esto está muy ligado a la relación entre clases. En [este post](../classes-types-relations/content.md) podes encontrar mas info.
 
-### Patrón controlador
+### Patron controlador
 
 El Patrón controlador sirve como intermediario entre una interfaz y el lógica que la implementa. Asigna la responsabilidad de manejar los eventos del sistema en una clase dedicada, que gestiona y coordina el comportamiento del sistema.
 
@@ -112,7 +112,7 @@ En el siguiente ejemplo, la clase AuthenticationController puede manejar eventos
         }
     }
 
-### Alta cohesión
+### Alta cohesion
 
 La cohesión se refiere al grado en que los elementos permanecen juntos.​ Mide la fuerza de la relación entre ellos.
 
@@ -248,7 +248,7 @@ En el siguiente ejemplo, la clase main renderiza todas las formas que tiene carg
         }
     }
 
-### Fabricación pura
+### Fabricacion pura
 
 La fabricación pura implica la creación de una clase artificial para cumplir con una responsabilidad específica cuando no existe una clase adecuada. Este principio tiene como objetivo mantener una alta cohesión y un bajo acoplamiento evitando la asignación de responsabilidades no relacionadas a las clases existentes.
 Ejemplo: en una aplicación de almacenamiento de archivos, se puede crear la clase FileStorage para manejar las operaciones de almacenamiento de archivos, separándola de la lógica empresarial principal.
@@ -278,7 +278,7 @@ Ejemplo: en una aplicación de almacenamiento de archivos, se puede crear la cla
         }
     }
 
-### Indirección
+### Indireccion
 
 La indirección introduce una clase u objeto intermedio para mediar entre otras clases, lo que ayuda a mantener un bajo acoplamiento y simplificar las interacciones. Este principio se puede aplicar a través de varios patrones, como los patrones Fachada o Adaptador.
 Ejemplo: en un sistema de notificación, se puede introducir una clase NotificationService para enviar notificaciones a través de diferentes canales, como correo electrónico o SMS, sin acoplar directamente las clases de remitente y destinatario.
