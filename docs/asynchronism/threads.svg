@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 570" width="900" height="570" role="img" aria-labelledby="title description">
+  <title id="title">Tareas que avanzan en uno o varios hilos</title>
+  <desc id="description">Tres líneas de tiempo muestran tareas secuenciales en un hilo bloqueado, tareas que se intercalan en un hilo mientras una espera una respuesta de entrada y salida, y tareas ejecutándose en dos hilos.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M1 1 7 4 1 7" fill="none" stroke="#1e1e1e" stroke-width="1.5"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe Print", "Comic Sans MS", cursive; fill: #1e1e1e; }
+      .heading { font-size: 19px; font-weight: 700; }
+      .label { font-size: 15px; }
+      .task { font-size: 16px; text-anchor: middle; }
+      .line { fill: none; stroke: #1e1e1e; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .purple { fill: #be4bdb; fill-opacity: .22; }
+      .red { fill: #fa5252; fill-opacity: .20; }
+      .yellow { fill: #fab005; fill-opacity: .24; }
+      .green { fill: #12b886; fill-opacity: .20; }
+      .pending { fill: none; stroke: #fa5252; stroke-width: 2; stroke-dasharray: 6 5; stroke-linecap: round; }
+    </style>
+  </defs>
+  <rect width="900" height="570" fill="#ffffff"/>
+
+  <text x="24" y="34" class="label">El tiempo avanza hacia la derecha →</text>
+
+  <text x="28" y="76" class="heading">1. Un hilo: tarea 2 espera a que termine la tarea 1</text>
+  <text x="35" y="129" class="label">Hilo 1</text>
+  <path d="M106 124 C290 121 520 126 860 123" class="line" marker-end="url(#arrow)"/>
+  <path d="M158 99 C235 96 320 100 380 98 C385 119 382 143 379 151 C307 154 229 149 158 151 C154 135 155 116 158 99Z" class="purple line"/>
+  <text x="268" y="130" class="task">Tarea 1</text>
+  <path d="M399 99 C472 97 551 100 620 98 C623 117 622 140 619 151 C548 153 473 150 399 151 C395 132 396 115 399 99Z" class="yellow line"/>
+  <text x="510" y="130" class="task">Tarea 2</text>
+  <text x="159" y="174" class="label">La tarea 1 termina antes de que empiece la 2</text>
+
+  <text x="28" y="220" class="heading">2. Un hilo: otra tarea avanza mientras llega la respuesta de E/S</text>
+  <text x="35" y="270" class="label">Hilo 1</text>
+  <path d="M106 265 C290 262 520 267 860 264" class="line" marker-end="url(#arrow)"/>
+  <path d="M143 239 C196 236 248 240 298 238 C301 254 300 274 297 282 C247 284 192 281 143 282 C140 268 141 251 143 239Z" class="purple line"/>
+  <text x="220" y="269" class="task">Inicia tarea 1</text>
+  <path d="M331 239 C388 236 446 240 505 238 C508 254 507 275 504 282 C447 284 386 281 331 282 C328 267 329 251 331 239Z" class="yellow line"/>
+  <text x="418" y="269" class="task">Tarea 2</text>
+  <path d="M577 239 C643 236 716 240 783 238 C786 254 785 275 782 282 C715 284 642 281 577 282 C574 267 575 251 577 239Z" class="purple line"/>
+  <text x="680" y="269" class="task">Continúa tarea 1</text>
+  <path d="M505 284 L505 297 M577 284 L577 297" class="line"/>
+  <text x="495" y="311" class="label" text-anchor="end">Termina tarea 2</text>
+  <text x="588" y="311" class="label">Llega respuesta</text>
+  <text x="35" y="350" class="label">E/S</text>
+  <path d="M299 344 C392 342 502 346 577 343" class="pending"/>
+  <text x="438" y="369" class="label" text-anchor="middle">La tarea 1 espera; el hilo queda libre</text>
+
+  <text x="28" y="414" class="heading">3. Dos hilos: tareas independientes progresan por separado</text>
+  <text x="35" y="466" class="label">Hilo A</text>
+  <path d="M106 461 C290 458 520 463 860 460" class="line" marker-end="url(#arrow)"/>
+  <path d="M154 436 C244 433 342 437 441 435 C444 453 443 476 440 484 C340 486 244 483 154 484 C151 469 152 451 154 436Z" class="purple line"/>
+  <text x="296" y="467" class="task">Tarea A</text>
+  <text x="35" y="523" class="label">Hilo B</text>
+  <path d="M106 518 C290 515 520 520 860 517" class="line" marker-end="url(#arrow)"/>
+  <path d="M154 494 C216 491 278 495 339 493 C342 510 341 532 338 541 C277 543 215 540 154 541 C151 526 152 509 154 494Z" class="green line"/>
+  <text x="247" y="525" class="task">Tarea B</text>
+  <text x="468" y="524" class="label">B termina antes en este ejemplo; el orden puede variar</text>
+</svg>
